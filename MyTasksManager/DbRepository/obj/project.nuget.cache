@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QcDKdu3bV0ZoKDsrjHJlbNb8Jr5ppTK/U+r7cD0cVI0uxdNzRQVM/LyCyUGupT0rF+Ket4BNewNmW8b++WNImA==",
+  "dgSpecHash": "7ryuS4W/w012VGqj7zSA0nljCGinDeqc7tmQ4Y8a4j7I50uLJ2tNARo+GM8zt4qjQ7DFUy1dcANEvYzEtTV24w==",
   "success": true,
-  "projectFilePath": "D:\\Temp\\MyPortfolioProjects\\MyTaskManager_WinApp\\MyTaskManager\\MyTasksManager\\MyTasksManager\\MyTasksManager.csproj",
+  "projectFilePath": "D:\\Temp\\MyPortfolioProjects\\MyTaskManager_WinApp\\MyTaskManager\\MyTasksManager\\DbRepository\\DbRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nj.mukumbe\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",
     "C:\\Users\\nj.mukumbe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
