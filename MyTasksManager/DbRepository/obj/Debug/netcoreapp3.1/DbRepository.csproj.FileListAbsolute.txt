@@ -1,6 +1,0 @@
-D:\Temp\MyPortfolioProjects\MyTaskManager_WinApp\MyTaskManager\MyTasksManager\DbRepository\bin\Debug\netcoreapp3.1\DbRepository.deps.json
-D:\Temp\MyPortfolioProjects\MyTaskManager_WinApp\MyTaskManager\MyTasksManager\DbRepository\bin\Debug\netcoreapp3.1\DbRepository.dll
-D:\Temp\MyPortfolioProjects\MyTaskManager_WinApp\MyTaskManager\MyTasksManager\DbRepository\obj\Debug\netcoreapp3.1\DbRepository.csprojAssemblyReference.cache
-D:\Temp\MyPortfolioProjects\MyTaskManager_WinApp\MyTaskManager\MyTasksManager\DbRepository\obj\Debug\netcoreapp3.1\DbRepository.AssemblyInfoInputs.cache
-D:\Temp\MyPortfolioProjects\MyTaskManager_WinApp\MyTaskManager\MyTasksManager\DbRepository\obj\Debug\netcoreapp3.1\DbRepository.AssemblyInfo.cs
-D:\Temp\MyPortfolioProjects\MyTaskManager_WinApp\MyTaskManager\MyTasksManager\DbRepository\bin\Debug\netcoreapp3.1\Models.dll
