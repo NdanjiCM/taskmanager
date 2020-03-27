@@ -11,6 +11,19 @@
             <ColumnDefinition Width="81*"/>
             <ColumnDefinition Width="719*"/>
         </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Grid.ColumnSpan="2"/>
+        <Button Content="Add card" Grid.Column="1" HorizontalAlignment="Left" Margin="624,15,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="Button_Click"/>
+        <Popup Margin="10,10,0,13" Name="taskPopUp" Placement="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="200" IsOpen="False">
+            <StackPanel>
+                <Label>Name:</Label>
+                <TextBox Name="TaskName"></TextBox>
+                <Label>Description:</Label>
+                <TextBox Name="TaskDescription"></TextBox>
+                <Label>Due Date:</Label>
+                <DatePicker Name="TaskDue"></DatePicker>
+                <Button Content="save" Click="Save_Task"/>
+            </StackPanel>
+        </Popup>
 
     </Grid>
 </Window>

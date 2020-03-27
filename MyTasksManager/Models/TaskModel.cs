@@ -18,7 +18,7 @@ namespace MyTasksManager.Models
             Status = TaskStatus.Pending;
         }
 
-        public TaskModel(string taskName, string description, string datetTimeDue, int categoryId = 0) : base()
+        public TaskModel(string taskName, string description, string datetTimeDue, int categoryId = 1) : base()
         {
             this.TaskName = taskName;
             this.Description = description;

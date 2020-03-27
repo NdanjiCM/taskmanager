@@ -1,6 +1,6 @@
 ﻿using Dapper;
 using MyTasksManager.Models;
-using System.Data.SqlClient;
+using System.Data;
 
 namespace DbRepository.Task
 {
@@ -10,9 +10,10 @@ namespace DbRepository.Task
 
         public bool Execute(TaskModel task) {
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (IDbConnection dbConnection = Connection)
             {
-                int result = connection.Execute($"INSERT INTO tasks (taskname, description, duedate, status, categoryid) " +
+                dbConnection.Open();
+                int result = dbConnection.Execute($"INSERT INTO tasks (taskname, description, duedate, status, categoryid) " +
                     $"VALUES(@TaskName, @Description, @DateTimeDue, @Status, @CategoryId)", task);
 
                 return result == 1;

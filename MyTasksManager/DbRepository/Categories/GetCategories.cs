@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using MyTasksManager.Models;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Data;
 
 namespace DbRepository.Categories
 {
@@ -11,9 +11,10 @@ namespace DbRepository.Categories
 
         public List<Category> Execute()
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (IDbConnection dbConnection = Connection)
             {
-                return connection.Query<Category>("SELECT * FROM category").AsList();
+                dbConnection.Open();
+                return dbConnection.Query<Category>("SELECT * FROM category").AsList();
             }
         }
     }
