@@ -1,4 +1,5 @@
 ﻿using MyTasksManager.Helpers.Enums;
+using System;
 
 namespace MyTasksManager.Models
 {
@@ -24,6 +25,12 @@ namespace MyTasksManager.Models
             this.Description = description;
             this.DateTimeDue = datetTimeDue;
             this.CategoryId = categoryId;
+        }
+
+        public bool IsOverdue()
+        {
+            DateTime dueDate = DateTime.Parse(DateTimeDue);
+            return DateTime.Now > dueDate;
         }
     }
 }

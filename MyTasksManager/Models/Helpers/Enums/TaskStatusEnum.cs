@@ -3,7 +3,7 @@
     public enum TaskStatus
     {
         Pending,
-        Completed,
-        OverDue
+        InProgress,
+        Completed
     }
 }
