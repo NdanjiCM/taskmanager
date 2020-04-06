@@ -71,6 +71,7 @@ namespace MyTasksManager
 
             //create inner grid
             Grid grid = new Grid();
+            grid.Name = "Task_"+task.TaskId;
             grid.Height = 150;
             grid.Width = 200;
             grid.Margin = new Thickness(0, 10, 10, 0);
