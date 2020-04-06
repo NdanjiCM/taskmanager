@@ -10,24 +10,30 @@
         <Rectangle HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Grid.ColumnSpan="2"/>
         <Button Content="Add card" Grid.Column="1" HorizontalAlignment="Left" Margin="624,15,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="Button_Click"/>
         <Border BorderThickness="2" HorizontalAlignment="Left" Margin="10, 50, 0, 0" BorderBrush="Gray" Width="250">
-            <StackPanel x:Name="Todo" Width="250" CanVerticallyScroll="True">
+            <StackPanel Width="250" CanVerticallyScroll="True">
                 <Border BorderBrush="Black" BorderThickness="0 0 0 1">
                     <TextBlock Margin="0" TextAlignment="Center" Height="20">To Do</TextBlock>
                 </Border>
+                <ScrollViewer Name="Todo" Height="360" VerticalScrollBarVisibility="Auto">
+                </ScrollViewer>
             </StackPanel>
         </Border>
         <Border BorderThickness="2" HorizontalAlignment="Center" Margin="0, 50, 0, 0" BorderBrush="Gray" Width="250">
-            <StackPanel x:Name="InProgress" Width="250" CanVerticallyScroll="True">
+            <StackPanel Width="250" CanVerticallyScroll="True">
                 <Border BorderBrush="Black" BorderThickness="0 0 0 1">
                     <TextBlock Margin="0" TextAlignment="Center" Height="20">In Progress</TextBlock>
                 </Border>
+                <ScrollViewer Name="InProgress" Height="360" VerticalScrollBarVisibility="Auto">
+                </ScrollViewer>
             </StackPanel>
         </Border>
         <Border BorderThickness="2" HorizontalAlignment="Right" Margin="0, 50, 10, 0" BorderBrush="Gray" Width="250">
-            <StackPanel x:Name="Completed" Width="250" CanVerticallyScroll="True">
+            <StackPanel Width="250" CanVerticallyScroll="True">
                 <Border BorderBrush="Black" BorderThickness="0 0 0 1">
                     <TextBlock Margin="0" TextAlignment="Center" Height="20">Completed</TextBlock>
                 </Border>
+                <ScrollViewer Name="Completed" Height="360" VerticalScrollBarVisibility="Auto">
+                </ScrollViewer>
             </StackPanel>
         </Border>
         <Popup Margin="10,10,0,13" Name="taskPopUp" Placement="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="200" IsOpen="False">

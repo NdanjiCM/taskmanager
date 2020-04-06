@@ -13,9 +13,16 @@ namespace MyTasksManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        readonly StackPanel TodoContent;
+        readonly StackPanel InProgressContent;
+        readonly StackPanel CompletedContent;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            TodoContent = new StackPanel();
+
             LoadPage();
         }
 
@@ -119,7 +126,10 @@ namespace MyTasksManager
             grid.Children.Add(status);
 
             border.Child = grid;
-            Todo.Children.Add(border);
+            TodoContent.Width = 250;
+            TodoContent.Children.Add(border);
+
+            Todo.Content = TodoContent;
         }
     }
 }
